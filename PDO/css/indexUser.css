@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #4d4d4d;
+  padding: 20px;
+}
+
+a.link {
+  width: max-content;
+  position: fixed;
+  left: 10px;
+  right: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+a.link:hover {
+  color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.head {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 1px 2px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+form .box {
+  display: inherit;
+  flex-direction: inherit;
+  gap: 5px;
+}
+
+form .inputDouble {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+form .subinput input {
+  width: 100%;
+  margin-top: 5px;
+}
+
+form label {
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+
+form input {
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.5px;
+  padding: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  background-color: #4d4d4d;
+  transition: 0.3s;
+}
+
+form input:focus {
+  border-left: 2px solid transparent;
+  border-top: 2px solid transparent;
+  border-right: 2px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.3);
+  outline: 0;
+}
+
+form input[type="number"]::-webkit-inner-spin-button,
+form input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+form input[type="file"] {
+  width: max-content;
+}
+
+form button {
+  width: max-content;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+form button:hover {
+  color: #4d4d4d;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+form .box:last-child {
+  align-items: flex-end;
+}
+
+form img {
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
